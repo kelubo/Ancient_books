@@ -1,0 +1,65 @@
+% 离骚 Main
+
+\documentclass[a4paper,12pt,UTF8,twoside]{ctexbook}
+
+% 设置纸张信息。
+\RequirePackage[a4paper]{geometry}
+\geometry{
+	%textwidth=138mm,
+	%textheight=215mm,
+	%left=27mm,
+	%right=27mm,
+	%top=25.4mm, 
+	%bottom=25.4mm,
+	%headheight=2.17cm,
+	%headsep=4mm,
+	%footskip=12mm,
+	%heightrounded,
+	inner=1in,
+	outer=1.25in
+}
+
+% 目录 chapter 级别加点（.）。
+\usepackage{titletoc}
+\titlecontents{chapter}[0pt]{\vspace{3mm}\bf\addvspace{2pt}\filright}{\contentspush{\thecontentslabel\hspace{0.8em}}}{}{\titlerule*[8pt]{.}\contentspage}
+
+% 设置 part 和 chapter 标题格式。
+\ctexset{
+	chapter/name={第,篇},
+	chapter/number={\chinese{chapter}}
+}
+
+% 设置古文原文格式。
+\newenvironment{yuanwen}{\bfseries\zihao{4}}
+
+\title{\heiti\zihao{0} 离骚}
+\author{屈原}
+\date{战国}
+
+\begin{document}
+	\maketitle
+	
+	\tableofcontents
+	
+	\frontmatter
+	
+	\chapter{前言}
+	
+	\chapter{序一}
+	
+	\mainmatter
+	\chapter{}
+	
+	\begin{yuanwen}
+		帝高阳之苗裔兮，朕皇考曰伯庸。
+		
+		摄提贞于孟陬兮，惟庚寅吾以降。
+		
+		皇览揆余初度兮，肇锡余以嘉名。
+		
+		名余曰正则兮，字余曰灵均。
+		
+		
+	\end{yuanwen}
+
+\end{document}
