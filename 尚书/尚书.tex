@@ -1,0 +1,127 @@
+% 尚书
+% 尚书.tex
+
+\documentclass[a4paper,12pt,UTF8,twoside]{ctexbook}
+
+% 设置纸张信息。
+\RequirePackage[a4paper]{geometry}
+\geometry{
+	%textwidth=138mm,
+	%textheight=215mm,
+	%left=27mm,
+	%right=27mm,
+	%top=25.4mm, 
+	%bottom=25.4mm,
+	%headheight=2.17cm,
+	%headsep=4mm,
+	%footskip=12mm,
+	%heightrounded,
+	inner=1in,
+	outer=1.25in
+}
+
+% 设置字体，并解决显示难检字问题。
+\xeCJKsetup{AutoFallBack=true}
+\setCJKmainfont{SimSun}[BoldFont=SimHei, ItalicFont=KaiTi, FallBack=SimSun-ExtB]
+
+% 目录 chapter 级别加点（.）。
+\usepackage{titletoc}
+\titlecontents{chapter}[0pt]{\vspace{3mm}\bf\addvspace{2pt}\filright}{\contentspush{\thecontentslabel\hspace{0.8em}}}{}{\titlerule*[8pt]{.}\contentspage}
+
+% 设置 part 和 chapter 标题格式。
+\ctexset{
+	part/name= {第,卷},
+	part/number={\chinese{part}},
+	chapter/name={第,篇},
+	chapter/number={\chinese{chapter}}
+}
+
+% 设置古文原文格式。
+\newenvironment{yuanwen}{\bfseries\zihao{4}}
+
+\title{\heiti\zihao{0} 尚书}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\frontmatter
+\chapter{前言、序言}
+
+\mainmatter
+
+\part{虞书}
+
+\chapter{尧典}
+\chapter{舜典}
+\chapter{大禹谟}
+\chapter{皋陶谟}
+\chapter{益稷}
+
+
+\part{夏书}
+
+\chapter{禹贡}
+\chapter{甘誓}
+\chapter{五子之歌}
+\chapter{胤征}
+
+\part{商书}
+
+\chapter{汤誓}
+\chapter{仲虺之诰}
+\chapter{汤诰}
+\chapter{伊训}
+\chapter{太甲上}
+\chapter{太甲中}
+\chapter{太甲下}
+\chapter{咸有一德}
+\chapter{盘庚上}
+\chapter{盘庚中}
+\chapter{盘庚下}
+\chapter{说命上}
+\chapter{说命中}
+\chapter{说命下}
+\chapter{高宗肜日}
+\chapter{西伯戡黎}
+\chapter{微子}
+
+\part{周书}
+
+\chapter{泰誓}
+\chapter{牧誓}
+\chapter{武成}
+\chapter{洪范}
+\chapter{旅獒}
+\chapter{金縢}
+
+\chapter{大诰}
+\chapter{微子之命}
+\chapter{康诰}
+\chapter{酒诰}
+\chapter{梓材}
+\chapter{召诰}
+\chapter{洛诰}
+\chapter{多士}
+\chapter{无逸}
+\chapter{君奭}
+\chapter{蔡仲之命}
+\chapter{多方}
+\chapter{立政}
+\chapter{周官}
+\chapter{君陈}
+\chapter{顾命}
+\chapter{康王之诰}
+\chapter{毕命}
+\chapter{君牙}
+\chapter{冏命}
+\chapter{吕刑}
+\chapter{文侯之命}
+\chapter{费誓}
+\chapter{秦誓}
+
+
+\end{document}
