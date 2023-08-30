@@ -21,6 +21,10 @@
 	outer=1.25in
 }
 
+% 设置字体，并解决显示难检字问题。
+\xeCJKsetup{AutoFallBack=true}
+\setCJKmainfont{SimSun}[BoldFont=SimHei, ItalicFont=KaiTi, FallBack=SimSun-ExtB]
+
 % 目录 chapter 级别加点（.）。
 \usepackage{titletoc}
 \titlecontents{chapter}[0pt]{\vspace{3mm}\bf\addvspace{2pt}\filright}{\contentspush{\thecontentslabel\hspace{0.8em}}}{}{\titlerule*[8pt]{.}\contentspage}
@@ -35,12 +39,11 @@
 	section/number={}
 }
 
-% 解决显示难检字问题。
-\xeCJKsetup{AutoFallBack=true}
-\setCJKmainfont{SimSun}[FallBack=SimSun-ExtB]
-
 % 设置古文原文格式。
 \newenvironment{yuanwen}{\bfseries\zihao{4}}
+
+% 设置署名格式。
+\newenvironment{shuming}{\hfill\bfseries\zihao{4}}
 
 \title{\heiti\zihao{0} 夜航船}
 \author{张岱}
@@ -54,11 +57,18 @@
 	\frontmatter
 	
     \chapter{前言}
+    
+    \begin{yuanwen}
     天下学问，唯夜航船中最难对付。盖村夫俗子，其学问皆预先备办，如瀛洲十八学士、云台二十八将之类，稍差其姓名，辄掩口笑之。彼盖不知十八学士、二十八将虽失记其姓名，实无害于学问文理，而反谓错落一人，则可耻孰甚。故道听途说，只办口头数十个名氏，便为博学才子矣。余因想吾八越，唯余姚风俗，后生小子，无不读书，及至二十无成，然后习为手艺。故凡百工贱业，其《性理》、《纲鉴》，皆全部烂熟，偶问及一事，则人名、官爵、年号、地方枚举之，未尝少错。学问之富，真是两脚书橱，而其无益于文理考校，与彼目不识丁之人无以异也。或曰：“信如此言，则古人姓名总不必记忆矣。”余曰：“不然。姓名有不关于文理，不记不妨，如八元、八恺、厨、俊、顾、及之类是也。有关于文理者，不可不记，如四岳、三老、臧毂、徐夫人之类是也。”
+    \end{yuanwen}
     
+    \begin{yuanwen}
     昔有一僧人，与一士子同宿夜航船。士子高谈阔论，僧畏慑，拳足而寝。僧人听其语有破绽，乃曰：“请问相公，澹台灭明是一个人，两个人？”士子曰：“是两个人。”僧曰：“这等，尧舜是一个人，两个人？”士子曰：“自然是一个人！”僧乃笑曰：“这等说起来，且待小僧伸伸脚。”余所记载，皆眼前极肤浅之事，吾辈聊且记取，但勿使僧人伸脚则可已矣。故即命其名曰《夜航船》。
+    \end{yuanwen}
     
+    \begin{shuming}
     古剑陶庵老人张岱书
+    \end{shuming}
 
     \mainmatter
     
@@ -67,21 +77,25 @@
 	\chapter{象纬}
 	
 	\section{九天}
+	
 	\begin{yuanwen}
-	东方苍天，南方炎天，西方昊天，北方玄天，东北旻天，西北幽天，西南朱天，东南阳天，中央钧天。
+	东方苍天，南方炎天，西方昊\footnote{h\`ao}天，北方玄天，东北旻\footnote{m\'in}天，西北幽天，西南朱天，东南阳天，中央钧天。
 	
 	日、月、星谓之三光。日、月合金、木、水、火、土五星谓之七政，又谓之七曜。日月所止舍，一日更七次，谓之七襄。
 	\end{yuanwen}
 	
+	太阳和月亮停歇的处所，一天要变更七次。
+	
 	\section{二十八宿}
+	
 	\begin{yuanwen}
-	东方七宿：角，木蛟；亢，金龙；氐\footnote{di}，土貉；房，日兔；心，月狐；尾，火虎；箕，水豹。
+	东方七宿：角，木蛟；亢，金龙；氐\footnote{d\=i}，土貉；房，日兔；心，月狐；尾，火虎；箕\footnote{j\=i}，水豹。
 	
-	北方七宿：斗，木獬\footnote{xie}；牛，金牛；女，土蝠；虚，日鼠；危，月燕；室，火猪；壁，水貐\footnote{yu}。
+	北方七宿：斗，木獬\footnote{xi\`e}；牛，金牛；女，土蝠；虚，日鼠；危，月燕；室，火猪；壁，水貐\footnote{y\v{u}}。
 	
-	西方七宿：奎，木狼；娄，金狗；胃，土雉；昴，日鸡；毕，月乌；觜\footnote{zi}，火猴；参，水猿。
+	西方七宿：奎\footnote{ku\'i}，木狼；娄，金狗；胃，土雉；昴，日鸡；毕，月乌；觜\footnote{z\=i}，火猴；参\footnote{sh\=en}，水猿。
 	
-	南方七宿：井，木犴\footnote{an}；鬼，金羊；柳，土獐；星，日马；张，月鹿；翼，火蛇；轸，水蚓。
+	南方七宿：井，木犴\footnote{\`an}；鬼，金羊；柳，土獐；星，日马；张，月鹿；翼，火蛇；轸，水蚓。
 	\end{yuanwen}
 
     \section{分野}
@@ -101,11 +115,13 @@
     \end{yuanwen}
 
 	\section{忧天坠}
+	
 	\begin{yuanwen}
-	《列子》：杞国有人常忧天坠，身无所寄，至废寝食。比人心多过虑，犹如杞人忧天。
+	《列子》：杞国有人常忧天坠，身无所寄\footnote{没处安身。}，至废寝食。比人心多过虑，犹如杞人忧天。
 	\end{yuanwen}
 	
 	\section{三才}
+	
 	\begin{yuanwen}
 	天、地、人谓之三才。混沌之气，轻清为天，重浊为地。天为阳，地为阴。人禀阴阳之气，生生不息，与天地参，故曰三才。
 	\end{yuanwen}
@@ -116,63 +132,96 @@
 	\end{yuanwen}
 	
 	\section{戴天}
+	
 	\begin{yuanwen}
 	《礼记》：君父之仇，不共戴天。兄弟之仇，不反兵革。交游之仇，不与同国。
     \end{yuanwen}
-
+	
+	对于君王和父亲的仇人，要与他不同戴天。对于兄弟的仇人，手中会时刻准备着武器，一旦遇上就不需返家再取。对于朋友的仇人，不要和他们同在一个国度。
+	
 	\section{补天}
 	\begin{yuanwen}
 	女娲氏炼石补天。
 	\end{yuanwen}
 	
 	\section{如天}
+	
 	\begin{yuanwen}
 	《通鉴》：帝尧其仁如天，其智如神，就之如日，望之如云。
 	\end{yuanwen}
 	
+	亲近他就像太阳般温暖，遥望他就像白云般高远。
+	
 	\section{补天浴日之功}
 	
+	\begin{yuanwen}
 	宋赵鼎疏曰：顷者陛下遣张浚出使川陕，国势百倍于今，浚有补天浴日之功，陛下有砺河之誓，终致物议以被窜逐。臣无浚之功，而当此重任，去朝廷远，恐好恶是非，行复纷纷于聪明之下矣。
+	\end{yuanwen}
 	
 	\section{二天}
 	
-	后汉苏章为冀州刺史，行部。有故人清河守，赃奸，章至，设酒叙欢。守曰：“人皆有一天，我独有二天。”章曰：“今日与故人饮，私恩也；明日冀州按事，公法也。”遂正其罪。
+	\begin{yuanwen}
+	后汉苏章为冀州刺史，行部。
+	
+	有故人清河守，赃奸，章至，设酒叙欢。
+	
+	守曰：“人皆有一天，我独有二天。”
+	
+	章曰：“今日与故人饮，私恩也；明日冀州按事，公法也。”遂正其罪。
+	\end{yuanwen}
 	
 	\section{焚香祝天}
 	
+	\begin{yuanwen}
 	后唐明宗登极之年，每于宫中焚香祝天曰：“某，胡人，因乱为众所推，愿天早生圣人，为生民主。”
+	\end{yuanwen}
 	
 	\section{威侮五行}
 	
+	\begin{yuanwen}
 	《通鉴》：帝启立，有扈氏无道，威侮五行，怠弃三正，启征之，大战于甘，灭之。
+	\end{yuanwen}
+	
 	
 	\section{五星会天}
 	
+	\begin{yuanwen}
 	《通鉴》：颛顼作历，以孟春之月为元。是岁正月朔旦立春，五星会于天，历营室。
+	\end{yuanwen}
+	
 	
 	\section{五星聚奎}
 	
+	\begin{yuanwen}
 	宋太祖干德五年，五星聚于奎。初，窦俨与卢多逊、杨徽之，周显德中同为谏官。俨善推步星历，尝曰：“丁卯岁五星聚奎，自此天下始太平。二拾遗见之，俨不与也。”
+	\end{yuanwen}
+	
 	
 	\section{五星斗明}
 	
+	\begin{yuanwen}
 	神宗万历四十七年，五星斗于东方，杜松、刘全军战没于浑河及马家寨等处。
+	\end{yuanwen}
+	
 	
 	\chapter{日月}
+	
 	\begin{yuanwen}
     东隅，日出之地；桑榆，日入之地。日拂扶桑，谓之及时。日经细柳，谓之过时。
     \end{yuanwen}
 	
 	\section{龙𧱓}
-	\begin{yuanwen}
-	《天文志》：日月会于龙𧱓\footnote{dou}尾。𧱓音斗。
 	
-	《广雅》：日初出为旭，日昕曰晞，日温曰煦\footnote{xu}；日在午曰亭午，在未曰映，日晚曰旰\footnote{gan}，日将落曰晡\footnote{bu}。
+	\begin{yuanwen}
+	《天文志》：日月会于龙𧱓\footnote{d\`ou}尾。𧱓音斗。
+	
+	《广雅》：日初出为旭，日昕\footnote{x\=in}曰晞，日温曰煦\footnote{x\`u}；日在午曰亭午，在未曰映，日晚曰旰\footnote{g\`an}，日将落曰晡\footnote{b\=u}。
 	
 	《天官书》曰：日月薄蚀，日月之交。月行黄道，而日为掩，则日食，是日阴胜阳，其变重。月行在望，与日冲，月入于暗之内，则月食，是日阳胜阴，其变轻。圣人扶阳而尊君曰：“日，君道也。”于其食，谨书而备戒之，日食为失德，月食为失刑。
 	\end{yuanwen}
 	
 	\section{日落九乌}
+	
 	\begin{yuanwen}
 	乌最难射。一日而落九乌，言羿之善射也。后以为羿射落九日，非是。
 	\end{yuanwen}
@@ -184,17 +233,26 @@
 	
 	\section{夸父追日}
 	
+	\begin{yuanwen}
 	《列子》：夸父不量力，欲追日影，逐之于旸谷之际，渴欲得饮。赴河饮不足，将北走大泽中，道渴而死。
+	\end{yuanwen}
+	
 	
 	\section{鲁戈返日}
 	
+	\begin{yuanwen}
 	鲁阳公与韩构战，战酣日暮，援戈挥之，日返三舍。又，虞公与夏战，日欲落，以剑指日，日返不落。
+	\end{yuanwen}
 	
 	\section{白虹贯日}
 	
+	\begin{yuanwen}
 	刑轲入秦刺秦皇，燕太子丹送之易水上，精诚格天，白虹贯日。
+	\end{yuanwen}
+	
 	
 	\section{田夫献曝}
+	
 	\begin{yuanwen}
 	《列子》：宋国有田夫曝日而背暖，顾谓其妻曰：“负日之暄，人莫知其美者，以献吾君，必有重赏。”人皆笑之。
 	\end{yuanwen}
