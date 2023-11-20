@@ -1,0 +1,58 @@
+% 医学实在易
+% 医学实在易.tex
+
+\documentclass[a4paper,12pt,UTF8,twoside]{ctexbook}
+
+% 设置纸张信息。
+\RequirePackage[a4paper]{geometry}
+\geometry{
+	%textwidth=138mm,
+	%textheight=215mm,
+	%left=27mm,
+	%right=27mm,
+	%top=25.4mm, 
+	%bottom=25.4mm,
+	%headheight=2.17cm,
+	%headsep=4mm,
+	%footskip=12mm,
+	%heightrounded,
+	inner=1in,
+	outer=1.25in
+}
+
+% 目录 chapter 级别加点（.）。
+\usepackage{titletoc}
+\titlecontents{chapter}[0pt]{\vspace{3mm}\bf\addvspace{2pt}\filright}{\contentspush{\thecontentslabel\hspace{0.8em}}}{}{\titlerule*[8pt]{.}\contentspage}
+
+% 设置 part 和 chapter 标题格式。
+\ctexset{
+	part/name= {},
+    part/number={},
+    chapter/name={},
+    chapter/number={}
+}
+
+% 设置古文原文格式。
+\newenvironment{yuanwen}{\bfseries\zihao{4}}
+
+% 设置署名格式。
+\newenvironment{shuming}{\hfill\bfseries\zihao{4}}
+
+\title{\heiti\zihao{0} 医学实在易}
+\author{陈念祖}
+\date{清}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	
+	\frontmatter
+
+
+
+	\mainmatter
+	
+
+
+\end{document}
