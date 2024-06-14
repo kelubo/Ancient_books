@@ -1,23 +1,15 @@
 % 尚书
 % 尚书.tex
 
-\documentclass[a4paper,12pt,UTF8,twoside]{ctexbook}
+\documentclass[12pt,UTF8]{ctexbook}
 
 % 设置纸张信息。
-\RequirePackage[a4paper]{geometry}
+\usepackage[a4paper,twoside]{geometry}
 \geometry{
-	%textwidth=138mm,
-	%textheight=215mm,
-	%left=27mm,
-	%right=27mm,
-	%top=25.4mm, 
-	%bottom=25.4mm,
-	%headheight=2.17cm,
-	%headsep=4mm,
-	%footskip=12mm,
-	%heightrounded,
-	inner=1in,
-	outer=1.25in
+	left=25mm,
+	right=25mm,
+	bottom=25.4mm,
+	bindingoffset=10mm
 }
 
 % 设置字体，并解决显示难检字问题。
@@ -38,6 +30,12 @@
 
 % 设置古文原文格式。
 \newenvironment{yuanwen}{\bfseries\zihao{4}}
+
+% 设置署名格式。
+\newenvironment{shuming}{\hfill\bfseries\zihao{4}}
+
+% 注脚每页重新编号，避免编号过大。
+\usepackage[perpage]{footmisc}
 
 \title{\heiti\zihao{0} 尚书}
 \author{}
@@ -502,9 +500,9 @@
 帝舜道：“使我能如愿以治理人民，四方都听从我的命令，好像草木随风而动，这都是你做的好事啊！”
 
 \begin{yuanwen}
-帝曰：“来，禹！降水儆予\footnote{text}，成允成功\footnote{text}，惟汝贤\footnote{text}。克勤于邦\footnote{text}，克俭于家，不自满假\footnote{text}，惟汝贤。汝惟不矜\footnote{text}，天下莫与汝争能。汝惟不伐\footnote{text}，天下莫与汝争功。予懋乃德\footnote{text}，嘉乃丕绩\footnote{text}，天之历数在汝躬\footnote{text}，汝终陟元后。人心惟危，道心惟微，惟精惟一，允执厥中。无稽之言勿听，弗询之谋勿庸。可爱非君？可畏非民？众非元后何戴？后非众罔与守邦？钦哉！慎乃有位，敬修其可愿。四海困穷，天禄永终。惟口出好兴戎，朕言不再。”
+帝曰：“来，禹！降水儆予\footnote{text}，成允成功\footnote{text}，惟汝贤\footnote{text}。克勤于邦\footnote{text}，克俭于家，不自满假\footnote{text}，惟汝贤。汝惟不矜\footnote{text}，天下莫与汝争能。汝惟不伐\footnote{text}，天下莫与汝争功。予懋乃德\footnote{text}，嘉乃丕绩\footnote{text}，天之历数在汝躬\footnote{text}，汝终陟元后\footnote{text}。人心惟危，道心惟微\footnote{text}，惟精惟一\footnote{text}，允执厥中\footnote{text}。无稽之言勿听\footnote{text}，弗询之谋勿庸。可爱非君\footnote{text}？可畏非民？众非元后何戴\footnote{text}？后非众罔与守邦？钦哉\footnote{text}！慎乃有位\footnote{text}，敬修其可愿\footnote{text}。四海困穷，天禄永终\footnote{text}。惟口出好兴戎\footnote{text}，朕言不再\footnote{text}。”
 
-禹曰：“枚卜功臣，惟吉之从。”
+禹曰：“枚卜功臣\footnote{text}，惟吉之从。”
 \end{yuanwen}
 
 然后，舜又转回来对禹说：“来，禹！当年天降洪水来警戒我，能够言行一致，既在治平水土中成就功业，又在民众中建立威信的，就数你最贤；既能勤劳为邦，又能节俭持家，不自满自大，这也数你最贤。你正因为不自逞能，所以天下没有一个人敢与你争能；你正因为不自居功，所以天下没有一个人敢与你争功。我真诚赞美你的品德，嘉许你的大功。天命已经降落到你的身上，你终将升任大君。人心是危险难安的，道心却微妙难明。惟有精心体察，专心守住，才能坚持一条不偏不倚的正确路线。没有考核事实的言语不要听，没有征询群众意见的主意不要用。可爱的不是君而是民，可畏的不是民而是君失其道。民众没有大君他们又爱戴谁呢？大君没有民众就无人跟他守邦了。一定要谨慎啊！认真对待你所居的大位，切实做好你想要做的每件事。如果四海百姓都至于穷困不堪，那你做大君的天禄也就永远终结了。只有这张嘴，最爱惹是生非，讲话可得慎重啊！我要讲的都已讲完，没有什么再要讲的了。”
@@ -512,13 +510,13 @@
 禹还是谦让道：“那么，就一个个功臣来占卜，看谁的卜兆最吉就由谁来接位。”
 
 \begin{yuanwen}
-帝曰：“禹，官占惟先蔽志，昆命于元龟。朕志先定，询谋佥同，鬼神其依，龟筮协从，卜不习吉。”
+帝曰：“禹，官占惟先蔽志\footnote{text}，昆命于元龟\footnote{text}。朕志先定，询谋佥同\footnote{text}，鬼神其依\footnote{text}，龟筮协从\footnote{text}，卜不习吉。”
 
 禹拜稽首，固辞。
 
-帝曰：“毋！惟汝谐。”
+帝曰：“毋！惟汝谐\footnote{text}。”
 
-正月朔旦，受命于神宗，率百官若帝之初。
+正月朔旦\footnote{text}，受命于神宗\footnote{text}，率百官若帝之初\footnote{text}。
 \end{yuanwen}
 
 帝舜道：“禹！我们占卜公事，是先由于心有疑难掩蔽，然后才去请问大龟的。现在我的意志早已先定了，并经征询众人的意见都一致赞同，相信鬼神必定依从，龟筮也必定是吉了。占卜是不会重复出现吉兆的，用不着再卜了。”但是，禹还是稽首拜辞。
@@ -528,9 +526,9 @@
 正月初一日，禹在尧庙里接受了摄政的委命，率领百官行礼，像当年舜受命摄政时一样。
 
 \begin{yuanwen}
-帝曰：“咨！禹，惟时有苗弗率，汝徂征。”
+帝曰：“咨\footnote{text}！禹，惟时有苗弗率\footnote{text}，汝徂征\footnote{text}。”
 
-禹乃会群后，誓于师曰：“济济有众，咸听朕命。蠢兹有苗，昏迷不恭，侮慢自贤，反道败德。君子在野，小人在位，民弃不保，天降之咎，肆予以尔众士，奉辞伐罪。尔尚一乃心力，其克有勋。”
+禹乃会群后\footnote{text}，誓于师曰\footnote{text}：“济济有众\footnote{text}，咸听朕命。蠢兹有苗\footnote{text}，昏迷不恭\footnote{text}，侮慢自贤\footnote{text}，反道败德\footnote{text}。君子在野，小人在位，民弃不保\footnote{text}，天降之咎\footnote{text}，肆予以尔众士\footnote{text}，奉辞伐罪\footnote{text}。尔尚一乃心力\footnote{text}，其克有勋\footnote{text}。”
 \end{yuanwen}
 
 然后，舜对禹说道：“禹！跟你商量一下，现时只有三苗不遵从我们的教令了，你去征伐他们。”
@@ -538,13 +536,13 @@
 禹于是大会各邦群后及其率领的人众，宣誓于众道：“整齐众多的勇士们！都来听我的命令：这无知盲动的三苗，执迷不悟，傲慢自大，违反正道，败坏常德。致使君子被遗弃在野，而小人却窃居高位，把人民抛弃不顾，因此，上天降灾于他们。我今天是用你们群后众士之力，奉天命去罚他们的罪。你们还须齐心合力，才能成就功勋。”
 
 \begin{yuanwen}
-三旬，苗民逆命。益赞于禹曰：“惟德动天，无远弗届。满招损，谦受益，时乃天道。帝初于历山，往于田，日号泣于旻天，于父母，负罪引慝祗载。见瞽叟，夔夔斋栗，瞽亦允若。至諴感神，矧兹有苗？”
+三旬，苗民逆命\footnote{text}。益赞于禹曰\footnote{text}：“惟德动天\footnote{text}，无远弗届\footnote{text}。满招损\footnote{text}，谦受益，时乃天道\footnote{text}。帝初于历山\footnote{text}，往于田，日号泣于旻天\footnote{text}，于父母，负罪引慝祗载\footnote{text}。见瞽叟\footnote{text}，夔夔斋栗\footnote{text}，瞽亦允若\footnote{text}。至諴感神\footnote{text}，矧兹有苗\footnote{text}？”
 
 禹拜昌言曰：“俞！”
 
-班师振旅。
+班师振旅\footnote{text}。
 
-帝乃诞敷文德，舞干羽于两阶。七旬，有苗格。
+帝乃诞敷文德\footnote{text}，舞干羽于两阶\footnote{text}。七旬，有苗格\footnote{text}。
 \end{yuanwen}
 
 战事进行了三十天，苗民仍然负隅顽抗，不肯听命。益就向禹建议道：“只有道德的力量才能感动天地，再远的地方也能达到。满招损，谦受益，常常就是天道。帝舜早年受父母虐待，一个人在历山耕田，苦不堪言。但他日日号哭涕泣，仍然呼喊苍天，呼喊父母，总是诚心自责，把罪错全部承担，从不怨天怨父母。有事去见瞽瞍的时候，总是端端正正，战战兢兢。在这种时候，连顽固的瞽瞍也真能通情达理了。常言至诚感神，何况有苗？”
@@ -556,11 +554,11 @@
 \begin{yuanwen}
 曰若稽古：
 
-皋陶曰：“允迪厥德，谟明弼谐。”
+皋陶曰：“允迪厥德\footnote{text}，谟明弼谐\footnote{text}。”
 
-禹曰：“俞，如何？”
+禹曰：“俞\footnote{text}，如何？”
 
-皋陶曰：“都！慎厥身，修思永。惇叙九族，庶明励翼，迩可远，在兹。”
+皋陶曰：“都！慎厥身，修思永\footnote{text}。惇叙九族\footnote{text}，庶明励翼\footnote{text}，迩可远\footnote{text}，在兹。”
 
 禹拜昌言曰：“俞！”
 \end{yuanwen}
@@ -576,23 +574,23 @@
 禹听了这番精当的言论，拜谢说：“对呀！”
 
 \begin{yuanwen}
-皋陶曰：“都！在知人，在安民。”
+皋陶曰：“都！在知人\footnote{text}，在安民。”
 
-禹曰：“吁！咸若时，惟帝其难之。知人则哲，能官人。安民则惠，黎民怀之。能哲而惠，何忧乎驩兜？何迁乎有苗？何畏乎巧言令色孔壬？”
+禹曰：“吁\footnote{text}！咸若时\footnote{text}，惟帝其难之\footnote{text}。知人则哲\footnote{text}，能官人\footnote{text}。安民则惠\footnote{text}，黎民怀之\footnote{text}。能哲而惠，何忧乎驩兜\footnote{text}？何迁乎有苗\footnote{text}？何畏乎巧言令色孔壬\footnote{text}？”
 \end{yuanwen}
 
 皋陶说：“最重要的还是知人善任，把臣民治理好。”禹说：“哎呀！事实虽是这样，但是想要完全做到这些，只怕连先王都难以做到。知人善任才算得上是明智之人，有智慧才能用人得当。能够把臣民治理好，便是给他们以恩惠，这样臣民当然会把恩惠记在心里。既然聪明而有恩德，还怕什么（马雚）兜，何必迁徙流放苗民，又何必害怕讲那些花言巧语、献媚取宠的坏人呢？”
 
 \begin{yuanwen}
-皋陶曰：“都！亦行有九德，亦言其人有德，乃言曰，载采采。”
+皋陶曰：“都！亦行有九德\footnote{text}，亦言其人有德，乃言曰，载采采\footnote{text}。”
 
-禹曰：“何？”
+禹曰：“何\footnote{text}？”
 \end{yuanwen}
 
 皋陶说：“啊！检验人的行为大约有九种美德。检验了言论，如果那个人有德，就告诉他说，可做点工作。”禹问：“什么叫九德呢？”
 
 \begin{yuanwen}
-皋陶曰：“宽而栗，柔而立，愿而恭，乱而敬，扰而毅，直而温，简而廉，刚而塞，强而义。彰厥有常，吉哉！日宣三德，夙夜浚明，有家；日严祗敬六德，亮采，有邦翕受敷施。九德咸事，俊乂在官。百僚师师，百工惟时，抚于五辰，庶绩其凝。无教逸欲，有邦兢兢业业。一日二日万几。无旷庶官，天工，人其代之。天叙有典，敕我五典五惇哉！天秩有礼，自我五礼有庸哉！同寅协恭和衷哉！天命有德，五服五章哉！天讨有罪，五刑五用哉！政事懋哉懋哉！天聪明，自我民聪明。天明畏，自我民明威。达于上下，敬哉有土！”
+皋陶曰：“宽而栗\footnote{text}，柔而立\footnote{text}，愿而恭\footnote{text}，乱而敬\footnote{text}，扰而毅\footnote{text}，直而温\footnote{text}，简而廉\footnote{text}，刚而塞\footnote{text}，强而义\footnote{text}。彰厥有常，吉哉！日宣三德\footnote{text}，夙夜浚明，有家\footnote{text}；日严祗敬六德\footnote{text}，亮采\footnote{text}，有邦翕受敷施\footnote{text}。九德咸事\footnote{text}，俊乂在官\footnote{text}。百僚师师\footnote{text}，百工惟时\footnote{text}，抚于五辰\footnote{text}，庶绩其凝\footnote{text}。无教逸欲，有邦兢兢业业。一日二日万几。无旷庶官，天工，人其代之。天叙有典，敕我五典五惇哉！天秩有礼，自我五礼有庸哉！同寅协恭和衷哉！天命有德，五服五章哉！天讨有罪，五刑五用哉！政事懋哉懋哉！天聪明，自我民聪明。天明畏，自我民明威。达于上下，敬哉有土！”
 \end{yuanwen}
 
 皋陶说：“宽宏而又坚栗，柔顺而又卓立，谨厚而又严恭，多才而又敬慎，驯服而又刚毅，正直而又温和，简易而又方正，刚正而又笃实，坚强而又合宜，要明显地任用具有九德的好人啊！“天天表现出三德，早晚认真努力于家的人，天天庄严地重视六德，辅助政事于国的人，一同接受，普遍任用，使具有九德的人都担任官职，那么在职的官员就都是才德出众的人了。各位官员互相效法，他们都想处理好政务，而且顺从君王，这样，各种工作都会办成。“治理国家的人不要贪图安逸和私欲，要兢兢业业，因为情况天天变化万端。不要虚设百官，上天命定的工作，人应当代替完成。上天规定了人与人之间的常法，要告诫人们用父义、母慈、兄友、弟恭、子孝的办法，把这五者敦厚起来啊！上天规定了人的尊卑等级，推行天子、诸侯、卿大夫、士和庶人这五种礼制，要经常啊！君臣之间要同敬、同恭，和善相处啊！上天任命有德的人，要用天子、诸侯、卿、大夫、士五等礼服表彰这五者啊！上天惩罚有罪的人，要用墨、劓、剕、宫、大辟五种刑罚处治五者啊！政务要努力啊！要努力啊！上天的视听依从臣民的视听。上天的赏罚依从臣民的赏罚。天意和民意是相通的，要谨慎啊，有国土的君王！”
